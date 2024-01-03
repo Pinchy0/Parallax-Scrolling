@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parallax Scrolling</title>
+<!-- https://www.w3schools.com/howto/howto_css_parallax.asp -->
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+  
+  .img1 {
+    /* The image used */
+    background-image: url('img_parallax.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img2 {
+    background-image: url('img_parallax_2.jpg');
+    min-height: 400px;
+
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img3 {
+    background-image: url('img_parallax_3.jpg');
+    min-height: 400px;
+
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .caption {
+
+    text-align: center;
+    color: #000;
+  }
+
+  div{
+    display: block;
+  }
+
+  .caption span.border{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+</style>
+</head>
+<body>
+<div class="img1">
+    <div class="caption">
+        <span class="border">SUPERNOVA</span>
+    </div>
+</div>
+<div class="parallax"></div>
+
+<div style="color: #BFCFE7;background-color:#3D3B40;text-align:center;padding:50px 80px;text-align: center;">
+  <h3 style="text-align:center;">What is a Supernova?</h3>
+  <p> A supernova is the biggest explosion that humans have ever seen. Each blast is the extremely bright, super-powerful explosion of a star.</p>
+</div>
+
+<div class="img2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LAST HURRAH</span>
+  </div>
+</div>
+
+<div style="color: #BFCFE7;background-color:#3D3B40;text-align:center;padding:50px 80px;text-align: center;">
+  <h3 style="text-align:center;">What causes a supernova?</h3>
+  <p> One type of supernova is caused by the “last hurrah” of a dying massive star.</p>
+  <p>
+    When the pressure drops low enough in a massive star, gravity suddenly takes over and the star collapses in just seconds. This collapse produces the explosion we call a supernova.
+
+    Supernovae are so powerful they create new atomic nuclei. As a massive star collapses, it produces a shockwave that can induce fusion reactions in the star’s outer shell. These fusion reactions create new atomic nuclei in a process called nucleosynthesis. 
+  </p>
+</div>
+
+<div class="img3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">BLACK HOLE</span>
+  </div>
+</div>
+
+<div style="color: #BFCFE7;background-color:#3D3B40;text-align:center;padding:50px 80px;text-align: center;">
+  <h3 style="text-align:center;">Blackhole after Supernova?</h3>
+  <p> Most black holes form from the remnants of a large star that dies in a supernova explosion. (Smaller stars become dense neutron stars, which are not massive enough to trap light.)</p>
+  <p>
+    If the total mass of the star is large enough (about three times the mass of the Sun), it can be proven theoretically that no force can keep the star from collapsing under the influence 
+    of gravity. However, as the star collapses, a strange thing occurs. As the surface of the star nears an imaginary surface called the "event horizon," time on the star slows relative to 
+    the time kept by observers far away. When the surface reaches the event horizon, time stands still, and the star can collapse no more - it is a frozen collapsing object.
+  </p>
+</div>
+
+<div class="parallax"></div>
+
+</body>
+</html>
